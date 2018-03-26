@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0 0;
+    text-align: center;
+    text-decoration: none;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+    background: #5a5757;
+}
+#rule{
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgb(27, 27, 27);
+}
+#rule a{
+    display: block;
+    width: 100%;
+    height: 40px;
+    font-size: 1.5em;
+    line-height: 40px;
+    color: yellow;
+}
+#rule #description{
+    margin: 100px 0;
+    color: yellow;
+}
+#rule #description p{
+    margin: 50px 0;
+    font-size: 1.4em;
+    text-align: center;
+    text-indent: 1.4em;
+}
+#reset{
+    width: 320px;
+    height: 40px;
+    margin: 0 auto;
+    background: #5a5757;
+}
+#reset a{
+    display: inline-block;
+    box-sizing: border-box;
+    height: 40px;
+    width: 155px;
+    font-size: 1em;
+    line-height: 40px;
+    color: yellow;
+    text-align: center;
+}
+#gameBox {
+    position: relative;
+    margin: 0 auto;
+    width: 320px;
+    font-size: 0;
+    background: rgb(223, 169, 169);
+}
+#cover {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#cover .every{
+    display: inline-block;
+    width: 80px;
+    height: 60px;
+    box-sizing: border-box;
+}
+#cover img {
+    display: inline-block;
+    width: 80px;
+    height: 60px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+#choose{
+    position: absolute;
+    top: 485px;
+    width: 320px;
+    height: 35px;
+}
+#level{
+    display: flex;
+    height: 35px;
+    width: 320px;
+    background: #666;
+}
+#level input{
+    width: 60px;
+    height: 35px;
+    font-size: 10px;
+}
+#level input,#level span{
+    display: inline-block;
+    flex: 1;
+}
+#choose span{
+    font-size: 16px;
+    color:red;
+    line-height: 35px;
+    text-align: center;
+}
+
+@media screen and (max-width:420px) {
+    #rule #description p{
+       text-align: left;
+    }
+    #gameBox{
+        margin: 0 auto;
+        width: 320px;
+    }
+    .every{
+        width: 25%;
+    }
+    #cover{
+        width: 100%;
+    }
+    img{
+        width: 100%;
+    }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>记忆游戏</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="./js/main.js"></script>
+</head>
+
+<body>
+    <div id="rule">
+        <a href="javascript:;">关闭</a>
+        <div id="description">
+            <h1>规则</h1>
+            <p>点击隐藏的图片会看到图片原型,再点击其他图片上一张图片会隐藏,前后两次点击的图片相同则消除,不同则继续隐藏</p>
+        </div>
+    </div>
+    <div id="reset">
+        <a href="javascript:;">重置</a>
+        <a href="javascript:;">规则</a>
+    </div>
+    <div id="gameBox">
+        <div id="cover"></div>
+        <div id="choose">
+            <div id="level">
+                <input type="button" value="上一关" />
+                <span id="sp1">当前第1关</span>
+                <input type="button" value="下一关" />
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
